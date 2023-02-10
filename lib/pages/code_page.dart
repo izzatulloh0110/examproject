@@ -1,6 +1,5 @@
 import 'package:examproject/pages/last_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:pinput/pinput.dart';
 
 class CodePage extends StatefulWidget {
@@ -75,6 +74,7 @@ class _CodePageState extends State<CodePage> {
                 listenForMultipleSmsOnAndroid: true,
                 obscureText: true,
                 // obscuringCharacter: "*",
+
                 defaultPinTheme: defaultPinTheme,
                 validator: (value) {
                   return value == '2222' ? null : 'Pin is incorrect';
